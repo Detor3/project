@@ -13,7 +13,6 @@ function start() {
 
 start();
 
-let bool = true;
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -59,12 +58,12 @@ function detectPersonalLevel() {
 
 detectPersonalLevel();
 
-function showMyDB(hidden) {
-    if (!hidden) {
+function showMyDB() {
+    if (!personalMovieDB.privat) {
         console.log(personalMovieDB);
     }
 }
-showMyDB(personalMovieDB.privat);
+showMyDB();
 
 function writeYourGenres() {
     for (let i = 1  ; i <= 3 ; i++) {
@@ -75,5 +74,5 @@ function writeYourGenres() {
 writeYourGenres();
 
 
-// console.log(personalMovieDB);
+
 
