@@ -13,7 +13,7 @@ let options = {
     }
 };
 options.makeTest();
-var { border, bgc } = options.color;
+let { border, bgc } = options.color;
 console.log(border,bgc);
 // console.log(Object.keys(options).length);
 // for (const key in options) {
